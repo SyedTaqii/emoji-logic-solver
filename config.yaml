@@ -1,0 +1,12 @@
+solver_model_name: "gpt2"
+evaluator_model_1: "gpt2"
+evaluator_model_2: "gpt2"
+
+use_openai: false
+openai_api_key: "your-openai-api-key"
+
+raw_dataset_path: "data/raw_problems.json"
+solved_output_path: "outputs/solved_problems.json"
+
+max_history_display: 10
+device: "cuda"
