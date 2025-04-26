@@ -10,7 +10,7 @@ class EmojiMathSolver:
             self.generator = pipeline("text-generation", model=model_name, device=0)
         else:
             self.openai_model = model_name
-            openai.api_key = "your-openai-api-key"
+            openai.api_key = "api-key"
 
     def solve(self, problem_text: str) -> Dict:
         prompt = SOLVER_PROMPT_TEMPLATE.format(problem=problem_text)
